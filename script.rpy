@@ -1,32 +1,25 @@
-﻿# Coloca el código de tu juego en este archivo.
+﻿# Coloca el código de tu juego en este archivo. 
 
 # Declara los personajes usados en el juego como en el ejemplo:
-
-define e = Character("Eileen")
-
 
 # El juego comienza aquí.
 
 label start:
 
-    # Muestra una imagen de fondo: Aquí se usa un marcador de posición por
-    # defecto. Es posible añadir un archivo en el directorio 'images' con el
-    # nombre "bg room.png" or "bg room.jpg" para que se muestre aquí.
+    jump contador
+    label main:
+    
+    jump EscenaUno
+    label FinalEscenaUno:
 
-    scene bg room
+    jump EscenaDos
+    label FinalEscenaDos:
 
-    # Muestra un personaje: Se usa un marcador de posición. Es posible
-    # reemplazarlo añadiendo un archivo llamado "eileen happy.png" al directorio
-    # 'images'.
+    jump EscenaTres
+    label FinalEscenaTres:
 
-    show eileen happy
+    jump EscenaCuatro
+    label FinalEscenaCuatro:
 
-    # Presenta las líneas del diálogo.
+    "FIN"
 
-    e "Has creado un nuevo juego Ren'Py."
-
-    e "Añade una historia, imágenes y música, ¡y puedes presentarlo al mundo!"
-
-    # Finaliza el juego:
-
-    return
