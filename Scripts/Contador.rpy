@@ -1,4 +1,4 @@
-label contador:
+label Contador:
 
     $ timer_range = 0
     $ timer_jump = 0
@@ -17,8 +17,8 @@ label contador:
         bar value time range timer_range xalign 0.5 yalign 0.9 xmaximum 300 at alpha_dissolve 
             # Valor pasado a la barra
 
-    $ time = 2.0 # Tiempo del timer
-    $ timer_range = 2.0 # El alcance de la barra en segundos
+    $ time = 5.0 # Tiempo del timer
+    $ timer_range = 5.0 # El alcance de la barra en segundos
     $ timer_jump = "time_out"
 
     jump main
